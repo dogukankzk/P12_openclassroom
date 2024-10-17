@@ -1,47 +1,53 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Phonelogo from '../assets/phone-call.png';  // Assure-toi du chemin correct
+import instagramLogo from '../assets/instagram.png'; // Assure-toi du chemin correct
+import Maillogo from '../assets/email.png' 
 
-export default function Contact() {
-  const [phoneNumber, setPhoneNumber] = useState('Loading...');
-  const [email, setEmail] = useState('Loading...');
-
-  useEffect(() => {
-    // Remplacer par les vraies informations lors du chargement de la page
-    setPhoneNumber('06 12 34 56 78'); // Numéro de téléphone réel
-    setEmail('contact@proemail.com'); // Adresse email réelle
-  }, []);
-
+export default function Footer() {
   return (
-    <section id="contact" className="w-full py-16  text-black font-jost">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold mb-8">Contactez-moi</h2>
+    <footer id="contact" className="w-full py-6 text-black">
+      <div className="container mx-auto">
+        <p className="mb- text-3xl">CONTACT</p>
 
-        <div className="flex flex-col items-center space-y-8">
-          {/* Lien LinkedIn */}
-          <a
-            href="https://www.linkedin.com/in/profil-linkedin" // Remplace par ton lien LinkedIn
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center space-x-4 text-lg hover:text-blue-400 transition-colors duration-300"
-          >
-            <span>Mon LinkedIn</span>
-          </a>
+        <div className="flex-collumn mt-3	">
+          {/* Numéro téléphone */}
+          <p> 
+            <img
+              src={Phonelogo}
+              alt="LinkedIn"
+              className="w-7 h-7 hover:scale-110 transition-transform duration-300"
+            />
+          </p>
 
-          {/* Email */}
-          <a
-            href={`mailto:${email}`}
-            className="flex items-center space-x-4 text-lg hover:text-blue-400 transition-colors duration-300"
-          >
-           
-            <span>{email}</span>
-          </a>
-
-          {/* Téléphone */}
-          <div className="flex items-center space-x-4 text-lg">
-           
-            <span>{phoneNumber}</span>
+          {/* Lien vers Instagram */}
+          <div className="flex  space-x-4 mt-4	">
+            <img
+              src={instagramLogo}
+              alt="Instagram"
+              className="w-7 h-7 hover:scale-110 transition-transform duration-300"
+            />
+            <a
+              href="https://www.instagram.com/ton-instagram"  // Remplace par ton lien Instagram
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Instagram
+            </a>
+          </div>
+          {/* Lien vers mail */}
+          <div className="flex items-center space-x-4 mt-4">
+            <img
+              src={Maillogo}
+              alt="Email"
+              className="w-7 h-7 hover:scale-110 transition-transform duration-300"
+            />
+            <a href="mailto:ton-email@example.com" className=" hover:underline">
+              ton-email@example.com
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

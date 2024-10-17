@@ -3,30 +3,16 @@
 @tailwind utilities;
 
   
-  /* Couleurs sombres pour le fond */
-  .bg-animated {
-    background: linear-gradient(270deg, #000000, #0b0d33, #0f022b, #1c003b);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-  }
-  
-  /* Keyframes pour l'animation du fond */
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
 /* Arrière-plan pastel */
 body {
-    background-color: #edceae5e; /* Bleu ciel pastel */
+    background-color: #efdecc25; 
     background-size: cover;
     min-height: 100vh;
   }
   
+
+  .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');

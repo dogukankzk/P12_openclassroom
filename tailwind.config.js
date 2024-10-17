@@ -6,6 +6,7 @@ module.exports = withMT({
     extend: {
       fontFamily: {
         jost: ['Jost', 'sans-serif'],
+        Playfair: ['Playfair Display'],
       },
       colors: {
         'dark-blue': '#0A0F2C', // Couleur sombre classe
@@ -16,3 +17,4 @@ module.exports = withMT({
   },
   plugins: [],
 });
+
