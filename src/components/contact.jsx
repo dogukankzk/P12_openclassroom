@@ -5,7 +5,7 @@ import Maillogo from '../assets/email.png'
 
 export default function Footer() {
   return (
-    <footer id="contact" className="w-full py-6 text-black">
+    <section id="contact" className="w-full py-6 text-black">
       <div className="container mx-auto">
         <p className="mb- text-3xl">CONTACT</p>
 
@@ -48,6 +48,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </section>
   );
 }

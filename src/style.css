@@ -5,7 +5,7 @@
   
 /* Arrière-plan pastel */
 body {
-    background-color: #efdecc25; 
+    background-color: #dfdddd; 
     background-size: cover;
     min-height: 100vh;
   }
@@ -16,3 +16,12 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@layer utilities {
+    .custom-shadow {
+      @apply rounded-[30px] bg-[#e0e0e0];
+      box-shadow: 
+        15px 15px 30px #bebebe,   /* Ombre grise à droite et en bas */
+        -15px -15px 30px #ffffff; /* Ombre blanche à gauche et en haut */
+    }
+  }
+  

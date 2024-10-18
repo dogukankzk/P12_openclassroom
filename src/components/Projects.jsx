@@ -12,10 +12,10 @@ export default function Projects() {
   return (
     <section id="projects" className="w-full py-20  font-jost">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-10">Mes Projets</h2>
+        <h3 className="text-5xl font-bold text-center mb-10">PROJECTS</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <div key={index} className="bg-[#b9aa9d] border-2 border-[#bda58fa1] shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 text-black">
+            <div key={index} className="custom-shadow rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 text-black">
               {/* Titre du projet */}
               <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
 

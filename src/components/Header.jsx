@@ -15,6 +15,7 @@ export default function Header() {
       {/* Navigation pour grands écrans */}
       <nav className="hidden lg:flex space-x-6 items-center">
         <a href="#about" className="hover:text-blue-500 transition-colors duration-300">À propos</a>
+        <a href="#skills" className="hover:text-blue-500 transition-colors duration-300">Skills</a>
         <a href="#projects" className="hover:text-blue-500 transition-colors duration-300">Projets</a>
       </nav>
 
@@ -46,11 +47,11 @@ export default function Header() {
           <a href="#about" className="hover:text-gray-500 transition-colors duration-300 text-lg" onClick={toggleMenu}>
             À propos
           </a>
+          <a href="#skills" className="hover:text-gray-500 transition-colors duration-300 text-lg" onClick={toggleMenu}>
+            Skills
+          </a>
           <a href="#projects" className="hover:text-gray-500 transition-colors duration-300 text-lg" onClick={toggleMenu}>
             Projets
-          </a>
-          <a href="#contact" className="hover:text-gray-500 transition-colors duration-300 text-lg" onClick={toggleMenu}>
-            Contact
           </a>
         </div>
       </div>
