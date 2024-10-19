@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../assets/IMG_3733.JPG'; // Chemin vers ton image de profil
+import profileImage from '../assets/IMG_3733.webp'; // Chemin vers ton image de profil
 import Contact from './contact'; // Import du composant Contact
 
 export default function About() {
@@ -11,6 +11,7 @@ export default function About() {
         <div className="mb-6 lg:mb-0">
           <img
             src={profileImage}
+            loading="lazy"
             alt="Photo de profil"
             className="w-[330px] h-[550px] object-cover rounded-[45px] mx-auto"
           />
@@ -23,7 +24,7 @@ export default function About() {
 
           {/* Description - Premier paragraphe */}
           <p className="text-lg lg:text-xl leading-relaxed mb-4">
-            Je m'appelle Kazkondu Dogukan, j'ai 22 ans, et je suis diplômé de la formation de développeur front-end chez 
+            Je m'appelle Kazkondu Dogukan, j'ai 22 ans, je suis diplômé de la formation de développeur front-end chez 
             <a href="https://openclassrooms.com/fr/paths/900-integrateur-web?utm_source=google&utm_medium=cpc&utm_campaign=display_google_fr_fr_b2c_prospecting_perf-max-track-developpement_230117_00_adgroup-is-&utm_source=google&utm_medium=cpc&gad_source=1&gclid=CjwKCAjwjsi4BhB5EiwAFAL0YNGrTK3MQEdDDf5Kn-3D8mbYwJDUqRI9UigikPtrMt2GqVPqVttAoxoCxxYQAvD_BwE" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 underline"> OpenClassrooms</a>. 
           </p>
 

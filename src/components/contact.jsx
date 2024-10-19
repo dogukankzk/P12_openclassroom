@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Phonelogo from '../assets/phone-call.png';  // Assure-toi du chemin correct
-import instagramLogo from '../assets/instagram.png'; // Assure-toi du chemin correct
-import Maillogo from '../assets/email.png'; // Assure-toi du chemin correct
+import Phonelogo from '../assets/phone-call.webp';  // Assure-toi du chemin correct
+import instagramLogo from '../assets/instagram (1).webp'; // Assure-toi du chemin correct
+import Maillogo from '../assets/email.webp'; // Assure-toi du chemin correct
 
-export default function Footer() {
+export default function Contact() {
   // Utiliser le state pour stocker les bonnes informations
   const [contactInfo, setContactInfo] = useState({
     phone: "Erreur numéro",
@@ -32,6 +32,7 @@ export default function Footer() {
           <div className="flex items-center space-x-4 mt-2">
             <img
               src={Phonelogo}
+              loading="lazy"
               alt="Phone"
               className="w-7 h-7 hover:scale-110 transition-transform duration-300"
             />
@@ -42,6 +43,7 @@ export default function Footer() {
           <div className="flex items-center space-x-4">
             <img
               src={instagramLogo}
+              loading="lazy"
               alt="Instagram"
               className="w-7 h-7 hover:scale-110 transition-transform duration-300"
             />
@@ -59,6 +61,7 @@ export default function Footer() {
           <div className="flex items-center space-x-4">
             <img
               src={Maillogo}
+              loading="lazy"
               alt="Email"
               className="w-7 h-7 hover:scale-110 transition-transform duration-300"
             />
