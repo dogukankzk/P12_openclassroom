@@ -27,7 +27,7 @@ export default function SkillsSection() {
             <ul className="space-y-4 text-2xl lg:text-3xl">
               <li>Français (natif)</li>
               <li>Türkçe (natif)</li>
-              <li>English (niveau B2)</li>
+              <li>English (courant)</li>
             </ul>
           </div>
 
@@ -35,7 +35,7 @@ export default function SkillsSection() {
           <div className="flex flex-col items-center">
             <h3 className="text-4xl lg:text-5xl font-semibold mb-8">EDUCATION</h3>
             <p className="text-2xl lg:text-3xl leading-relaxed text-center">
-              Formation Bac +2  developpeur Frontend chez Openclassroom.
+              Bac +2  developpeur Frontend chez Openclassroom.
             </p>
           </div>
         </div>
