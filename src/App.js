@@ -13,7 +13,7 @@ function App() {
       <About />
       <SkillsSection/>
       <Projects />
-      <Droit_auteur/>
+      <Droit_auteur />
     </div>
   );
 }
