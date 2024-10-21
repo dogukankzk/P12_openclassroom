@@ -67,7 +67,7 @@ export default function SkillsSection() {
 
           {/* Education Section */}
           <div className="flex flex-col items-center">
-            <h2 className="text-4xl lg:text-5xl font-semibold mb-8">EDUCATION</h2>
+            <h2 className="text-4xl lg:text-5xl font-semibold mb-8">FORMATION</h2>
             <p className="text-2xl lg:text-3xl leading-relaxed text-center">
               Bac +2 développeur Frontend chez Openclassrooms.
             </p>

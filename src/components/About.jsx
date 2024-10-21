@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../assets/IMG_3733.webp'; // Chemin vers ton image de profil
+import profileImage from '../assets/IMG_3733.webp';
 import Contact from './contact'; // Import du composant Contact
 
 export default function About() {

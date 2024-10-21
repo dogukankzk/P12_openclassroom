@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Phonelogo from '../assets/phone-call.webp';  // Assure-toi du chemin correct
-import instagramLogo from '../assets/instagram (1).webp'; // Assure-toi du chemin correct
-import Maillogo from '../assets/email.webp'; // Assure-toi du chemin correct
+import Phonelogo from '../assets/phone-call.webp'; 
+import instagramLogo from '../assets/instagram (1).webp'; 
+import Maillogo from '../assets/email.webp'; 
 
 export default function Contact() {
   // Utiliser le state pour stocker les bonnes informations
